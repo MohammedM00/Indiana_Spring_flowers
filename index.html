@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    const header = document.createElement("header");
+    header.innerText = "Spring Flowers in Indiana";
+    header.style.textAlign = "center";
+    header.style.fontSize = "200%";
+    document.body.appendChild(header);
+    const paragraph = document.createElement("p");
+    paragraph.innerText = "Although the first day of Spring is March 20th (roughly), Indiana usually doesn't get that memo until about May. It stays bitterly cold for far too long. It may seem like warm weather is near, and then BAM, snowstorm. Don't get your warm weather hopes up at any point, because more times than not, they will be crushed.";
+    paragraph.style.fontSize = "large";
+    document.body.appendChild(paragraph);
+    const order = document.createElement("ol");
+    order.className = "order"
+    document.body.appendChild(order);
+    let str1 = 
+    `<li>Daffodil, golden yellow rays of sunlight</li>
+    <li>Crocus, purple carpets</li>
+    <li>Iris, multi-colored spectacle</li>`;
+    let list1 = document.querySelector(".order");
+    list1.innerHTML = str1;
+</script>
+</html>
